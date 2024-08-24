@@ -1,2 +1,4 @@
-package fr.diginamic.entites;public class Adresse {
+package fr.diginamic.entites;
+
+public class Adresse {
 }

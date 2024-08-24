@@ -1,2 +1,4 @@
-package org.hibernate.jpa;public class HibernatePersistenceProvider {
+package org.hibernate.jpa;
+
+public class HibernatePersistenceProvider extends PersistenceProvider {
 }
