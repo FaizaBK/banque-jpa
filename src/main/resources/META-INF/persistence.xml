@@ -2,11 +2,12 @@
 <persistence xmlns="https://jakarta.ee/xml/ns/persistence"
              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
              xsi:schemaLocation="https://jakarta.ee/xml/ns/persistence https://jakarta.ee/xml/ns/persistence/persistence_3_1.xsd"
-             version="3.0">
+             version="3.1">
 
     <persistence-unit name="banque">
-
         <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+
+
         <properties>
 
             <property name="jakarta.persistence.jdbc.url" value="jdbc:mariadb://127.0.0.1:3308/banque"/>

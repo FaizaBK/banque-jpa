@@ -1,9 +1,9 @@
-package fr.diginamic.entites;
+package fr.diginamic.entites.Generic;
 
+import fr.diginamic.entites.Client.Client;
 import jakarta.persistence.*;
 import java.util.HashSet;
 import java.util.Set;
-
 
 @Entity
 @Table(name = "BANQUE")
@@ -11,7 +11,6 @@ public class Banque {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "ID")
     private Long id;
 
     @Column(name = "NOM", nullable = false)
@@ -20,5 +19,12 @@ public class Banque {
     @OneToMany(mappedBy = "banque", cascade = CascadeType.ALL, orphanRemoval = true)
     private Set<Client> clients = new HashSet<>();
 
-    // Getters et Setters
+    public Banque() {
+    }
+
+    public Banque(String nom) {
+        this.nom = nom;
+    }
+
+
 }
